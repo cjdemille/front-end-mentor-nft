@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: 'Outfit' , sans-serif;
+    background-color:hsl(217, 54%, 11%);
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    min-height:100vh;
+}
+
+.card{
+    background-color:hsl(216, 50%, 16%) ;
+    padding:1.5em;
+    border-radius: 1em;
+    width:400px;
+    /* margin-left:1em;
+    margin-right:1em; */
+}
+
+.header-img{
+    width:100%;
+    height:30%;
+}
+
+.overlay {
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+    background: hsl(178, 100%, 50%);
+    /* display: inline-block; */
+
+  }
+  
+  .overlay > img {
+    vertical-align: middle;
+  }
+  
+  .view-icon-box{
+      position:absolute;
+      z-index:100;
+      width:100%;
+      height:100%;
+      opacity:0;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .view-icon-box:hover{
+    opacity:100;
+    transition: .5s ease;
+  }
+  .view-icon{
+      width:30%;
+  }
+  .overlay::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: hsl(178, 100%, 50%);
+    opacity: 0;
+    transition: .5s ease;
+  }
+  
+  .overlay:hover::before {
+    opacity: 0.60;
+  }
+
+h1{
+    font-weight: 600;
+    padding:1em 0;
+    font-size:1.5em;
+}
+
+h1:hover{
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+h2{
+    font-weight:300;
+    padding-bottom: 1em;
+    font-size:1.25em;
+    color:hsl(215, 51%, 70%);
+}
+.card-body{
+    display:flex;
+    justify-content: space-between;
+    padding-bottom: 1em;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.cost{
+    color:hsl(178, 100%, 50%);
+    display:flex;
+    align-items:center;
+}
+.cost p{
+    padding-left:1em;
+}
+
+.costimg{
+    display:inline;
+}
+.time-left{
+    color:hsl(215, 51%, 70%);
+    display:flex;
+    align-items:center;
+}
+
+.time-left p{
+    padding-left: 1em;
+}
+p{
+    display:inline;
+}
+
+.card-footer{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    padding: 1em 0;
+}
+
+.footer-img{
+    border:1px solid white;
+    border-radius: 100%;
+    width:10%;
+    margin:0;
+}
+
+.footer-text{
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    color:hsl(215, 51%, 70%);
+    padding-left: 1em;
+}
+.name{
+    color:white;
+}
+.name:hover{
+    color:hsl(178, 100%, 50%);
+    cursor:pointer;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
